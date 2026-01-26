@@ -1,4 +1,4 @@
-# Cypress Resorts Admin Dashboard - TODO
+# Cypress Resorts CMS - ADMIN DASHBOARD - CHANGELOG
 
 ## Completed
 

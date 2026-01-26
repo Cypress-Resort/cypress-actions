@@ -1,4 +1,4 @@
-# Cypress Resorts Admin Dashboard - Development Plan
+# Cypress Resorts CMS - Development Plan
 
 **Project:** Luxury Resort Administration Platform
 **Template:** cypress-cms (Next.js 16 Dashboard)
@@ -9,6 +9,8 @@
 ## Executive Summary
 
 Transform the existing CRM dashboard template into a world-class administration dashboard for Cypress Resorts, a luxury boutique resort. The dashboard will enable resort administrators to manage reservations, guests, villa inventory, amenities, and communications from a single unified interface.
+
+The CMS permitting guests to access their account and manage reservations will be added in the next phase of work
 
 ---
 
