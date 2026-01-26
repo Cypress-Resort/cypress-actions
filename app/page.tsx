@@ -3,11 +3,25 @@ import React from 'react';
 import Image from "next/image";
 
 export default function Home() {
-   const repoUrl = 'https://github.com/Cypress-Resort/cypress-actions';
+  const repoUrl = 'https://github.com/Cypress-Resort/cypress-actions';
 
-   const handleOpenReadme = () => {
-    window.open(`${repoUrl}/blob/main/README.md`, '_blank'); // Opens README.md in a new tab
-  };
+  const items = [
+    {
+      name: 'ChangeLog for Website',
+      description: 'the set of actions and assignments for managing the commercial site',
+      path: 'blob/main/CHANGELOG_SITE.md',
+    },
+    {
+      name: 'Develop Plan - CMS',
+      description: 'the set of actions for building out quest services and administration function for our guests.',
+      path: 'blob/main/DEVELOPMENT_PLAN_CMS.md',
+    },
+    {
+      name: 'ChangeLog for CMS',
+      description: 'realtime actions and status for building and testing the CMS',
+      path: 'blob/main/CHANGELOG_CMS.md',
+    },
+  ];
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
@@ -26,16 +40,34 @@ export default function Home() {
           </h1>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
             Consolidated set of actions for Cypress partners and employees
-           
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-           <button
-              onClick={handleOpenReadme}
-              className="bg-emerald-500 text-white font-bold py-2 px-4 rounded hover:bg-emerald-600 animate-pulse"
-            >
-              Actions
-            </button>
+        <div className="w-full mt-8">
+          <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700 bg-white dark:bg-black rounded-lg shadow-md">
+            <thead className="bg-gray-50 dark:bg-gray-800">
+              <tr>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-300">Name</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-300">Description</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-300">Link</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
+              {items.map((item, index) => (
+                <tr key={index} className="hover:bg-gray-50 dark:hover:bg-gray-900">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-zinc-50">{item.name}</td>
+                  <td className="px-6 py-4 text-sm text-gray-500 dark:text-zinc-400">{item.description}</td>
+                  <td className="px-6 py-4 text-sm">
+                    <button
+                      onClick={() => window.open(`${repoUrl}/${item.path}`, '_blank')}
+                      className="bg-emerald-500 text-white font-bold py-2 px-4 rounded hover:bg-emerald-600 shadow-md shadow-emerald-500/50 animate-pulse transition-all duration-300"
+                    >
+                      View
+                    </button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </main>
     </div>
