@@ -70,6 +70,12 @@
 
 ## Pending
 
+### Content
+- [ ] Villa descriptions and details
+- [ ] Amenity descriptions and details
+- [ ] Calendar set up (holdays, special pricing rules)
+- [ ] Create guest accounts and details from spreadsheets (message guests with account access codes)
+
 ### Reservation Detail View (`/reservations/[id]`)
 - [ ] Full reservation details
 - [ ] Guest information section
