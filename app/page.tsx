@@ -1,8 +1,9 @@
+"use client"
 import React from 'react';
 import Image from "next/image";
 
 export default function Home() {
-   const repoUrl = 'https://github.com/your-username/your-repo';
+   const repoUrl = 'https://github.com/Cypress-Resort/cypress-actions';
 
    const handleOpenReadme = () => {
     window.open(`${repoUrl}/blob/main/README.md`, '_blank'); // Opens README.md in a new tab
