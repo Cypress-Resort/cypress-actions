@@ -29,10 +29,26 @@
 - [x] Reservations page (`/reservations`)
   - Filter by date range, status, payment status, villa
   - Pagination, search
+  - Functions accessed via drop down on each reservations (elipses)
+    - View Details
+    - Edit Reservation
+    - Check out (including late checkout time)
+    - Lock code
+    - send Message
+- [x] Electronic lock code management
+  - Generate new code (mock)
+  - View active code
+  - Revoke access
 - [x] Villas inventory page (`/villas`)
   - Grid/list view toggle
   - Filter by status and type
   - Villa cards with details
+  - Functions on cards (see elipses) for viewing and editing Villa details
+    - Access by drop down menu (elipses)
+    - View by guest filters details only disclosed to admin
+  - Function on cards to view the calendar for the Villa
+  - Function on cards to set maintenance schedule for the villa
+    and block calendar. Also - notify guests (option)
 
 ---
 
@@ -57,10 +73,6 @@
 ### Reservation Detail View (`/reservations/[id]`)
 - [ ] Full reservation details
 - [ ] Guest information section
-- [ ] Electronic lock code management
-  - Generate new code
-  - View active code
-  - Revoke access
 - [ ] Payment history and status
 - [ ] Amenity orders for this reservation
 - [ ] Special requests management
