@@ -34,7 +34,7 @@
 | 12 | Persist page visibility site-nav state set by admin to supabase | Admin page sets page visibility but needs db to persist globally and across sessions  | <span style="color:#2da44e;">✅</span>| 2026-01-22 | @pat | none |
 | 13 | Refactor Image code blocks for sizes | Nextjs image component requires sizes attributes so that it can choose optimal image resolution on small form factors like mobile and tablets | <span style="color:#2da44e;">✅</span>| 2026-01-22 | @pat | none |
 | 14 | Enable RLS on Supabase for site-nav | With row level security and the use of the services key, we avoid security breaches from exposing anon key in browser with write privileges | <span style="color:#2da44e;">✅</span>| 2026-01-22 | @pat | none |
-| 15 | Enable RLS on Supabase for product and order tables | Avoid security breaches from exposing anon key in browser with write privileges | <span style="color:#cf222e;">❌ Not completed</span>| 2026-01-24 | @pat | none |
+| 15 | Enable RLS on Supabase for product and order tables | Avoid security breaches from exposing anon key in browser with write privileges | <span style="color:#2da44e;">✅</span>| 2026-01-24 | @pat | none |
 | 16 | CMS Prototype | Build and deploy Phase I prototype of the CMS - focused on administrator functions (https://cypress-cms.vercel.app/) | <span style="color:#2da44e;">✅</span>| 2026-01-25 | @pat | none |
 | 17 | Consolidated Actions Site | Build and deploy a single site with consolidated actions and plans from across Cypress sites (https://cypress-resort-actions.vercel.app/) | <span style="color:#2da44e;">✅</span>| 2026-01-25 | @pat | none |
 
