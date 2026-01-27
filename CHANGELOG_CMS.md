@@ -26,6 +26,7 @@
 ### Pages
 - [x] Dashboard overview page (`/`)
   - Welcome section, stats cards, charts, today's activity table
+  - Quick actions sidebar with today's check-ins, check-outs, and pending tasks
 - [x] Reservations page (`/reservations`)
   - Filter by date range, status, payment status, villa
   - Pagination, search
@@ -49,58 +50,54 @@
   - Function on cards to view the calendar for the Villa
   - Function on cards to set maintenance schedule for the villa
     and block calendar. Also - notify guests (option)
-
----
-
-## In Progress
-
-### Guest Profiles Page (`/guests`)
-- [ ] Create route and page component
-- [ ] Guest list with search and filters (VIP status, tags)
-- [ ] Guest cards showing stay history, preferences
-- [ ] Link to guest reservations
-
-### Amenities Page (`/amenities`)
-- [ ] Create route and page component
-- [ ] Amenity catalog by category
-- [ ] Pricing and availability management
-- [ ] Amenity order history
+- [x] Guest Profiles page (`/guests`)
+  - Guest list with search and filters (VIP status, visit count, tags)
+  - Guest cards showing contact info, stay history, preferences
+  - Guest detail drawer with full profile, reservation history, notes
+  - Add/edit guest functionality
+  - Tag management for guest segmentation
+- [x] Amenities page (`/amenities`)
+  - Amenity catalog with category tabs (Spa, Dining, Activities, etc.)
+  - Grid/list view toggle
+  - Pricing and availability display
+  - Amenity detail drawer with full info, pricing tiers, scheduling
+  - Add/edit amenity functionality
+  - Order history tracking
+- [x] Calendar page (`/calendar`)
+  - Monthly occupancy overview with grid and list views
+  - Clean day cells showing occupancy count (X/total units)
+  - Activity pills for arrivals, departures, and pending items
+  - Today highlight with primary ring
+  - Day run-sheet drawer with:
+    - Progress tracking (checkboxes persisted to localStorage)
+    - Tasks grouped by category (Arrivals, Departures, Services, Special Requests)
+    - Unit status overview (collapsible)
+    - Share functionality (copy to clipboard, native share, print)
+    - Strikethrough on completed items
 
 ---
 
 ## Pending
 
-### Content
-- [ ] Villa descriptions and details
-- [ ] Amenity descriptions and details
-- [ ] Calendar set up (holdays, special pricing rules)
-- [ ] Create guest accounts and details from spreadsheets (message guests with account access codes)
-
-### Reservation Detail View (`/reservations/[id]`)
-- [ ] Full reservation details
-- [ ] Guest information section
-- [ ] Payment history and status
-- [ ] Amenity orders for this reservation
-- [ ] Special requests management
-- [ ] Modification history
-
 ### Guest Messaging (`/messages`)
 - [ ] Thread list with unread indicators
 - [ ] Message composer with templates
-- [ ] Email integration (mock)
+- [ ] Multi-channel support (email, SMS, in-app chat)
 - [ ] Thread detail view
+- [ ] Automated message triggers (pre-arrival, post-checkout)
 
-### Calendar Page (`/calendar`)
-- [ ] Visual calendar with occupancy view
-- [ ] Drag-to-book functionality
-- [ ] Blackout date management
-- [ ] Rate period visualization
-
-### Settings
+### Settings (`/settings`)
 - [ ] Resort profile settings
-- [ ] Staff management
+- [ ] Staff management and permissions
 - [ ] Notification preferences
-- [ ] Integration settings
+- [ ] Integration settings (PMS, payment processors)
+- [ ] Email/SMS configuration
+
+### Guest Account Management
+- [ ] Guest self-service portal setup
+- [ ] Account creation from spreadsheet import
+- [ ] Send account access codes to guests
+- [ ] Guest preferences and saved payment methods
 
 ---
 
@@ -147,14 +144,21 @@ cypress-cms/
 │   │   └── page.tsx          # Reservations list
 │   ├── villas/
 │   │   └── page.tsx          # Villas inventory
-│   ├── guests/               # TODO
-│   ├── amenities/            # TODO
+│   ├── guests/
+│   │   └── page.tsx          # Guest profiles
+│   ├── amenities/
+│   │   └── page.tsx          # Amenity catalog
+│   ├── calendar/
+│   │   └── page.tsx          # Occupancy calendar + run-sheets
 │   ├── messages/             # TODO
-│   └── calendar/             # TODO
+│   └── settings/             # TODO
 ├── components/
 │   ├── dashboard/            # Dashboard components
 │   ├── reservations/         # Reservation components
 │   ├── villas/               # Villa components
+│   ├── guests/               # Guest components
+│   ├── amenities/            # Amenity components
+│   ├── calendar/             # Calendar + run-sheet components
 │   └── ui/                   # shadcn/ui components
 ├── types/                    # TypeScript interfaces
 ├── mock-data/               # Mock data
