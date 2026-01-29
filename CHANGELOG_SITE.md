@@ -37,6 +37,9 @@
 | 15 | Enable RLS on Supabase for product and order tables | Avoid security breaches from exposing anon key in browser with write privileges | <span style="color:#2da44e;">✅</span>| 2026-01-24 | @pat | none |
 | 16 | CMS Prototype | Build and deploy Phase I prototype of the CMS - focused on administrator functions (https://cypress-cms.vercel.app/) | <span style="color:#2da44e;">✅</span>| 2026-01-25 | @pat | none |
 | 17 | Consolidated Actions Site | Build and deploy a single site with consolidated actions and plans from across Cypress sites (https://cypress-resort-actions.vercel.app/) | <span style="color:#2da44e;">✅</span>| 2026-01-25 | @pat | none |
+| 18 | Discrete Product Category Labels | Update product categories with labels that are more discrete to assist guests in searching and making selections (filters) | <span style="color:#2da44e;">✅</span>| 2026-01-29 | @pat | none |
+| 19 | implement uniform structure for variants array | variants array had a mix of strings and objects - moved to uniform object structure with price:null where applicable | <span style="color:#2da44e;">✅</span>| 2026-01-29 | @pat | none |
+| 20 | Product handling & Shopping for Admins and Guests with Variants | Design, page, DB updates for rendering variants on guest selection and admin pages. (handle objects in arrays by react) | <span style="color:#2da44e;">✅</span>| 2026-01-29 | @pat | none |
 
 
 
