@@ -77,7 +77,17 @@
 
 ---
 
-## Pending
+## Work in Progress
+
+### Database Migration from MEWS
+- [x ] Download guest and reservation data from MEWS
+- [x ] Create Migration scripts for guests and reservations
+- [ ] Test Migrations - resolve data exceptions (ie - reservations with no guest profile match)
+- [x ] Create database schema migrations
+- [ ] Replace mock-db for guests and reservations with Supabase client
+- [ ] Refactor components to use Supabase
+- [ ] Add real-time subscriptions for live updates (to be investigated - MEWS has a scheduled download function)
+- [ ] Work with Tanner on actions to complete or collect missing table data
 
 ### Guest Messaging (`/messages`)
 - [ ] Thread list with unread indicators
@@ -102,11 +112,6 @@
 ---
 
 ## Technical Debt / Improvements
-
-### Database Migration
-- [ ] Replace mock-db with Supabase client
-- [ ] Create database schema migrations
-- [ ] Add real-time subscriptions for live updates
 
 ### Authentication
 - [ ] Add authentication (Supabase Auth or similar)
