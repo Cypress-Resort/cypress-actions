@@ -40,7 +40,7 @@
 | 18 | Discrete Product Category Labels | Update product categories with labels that are more discrete to assist guests in searching and making selections (filters) | <span style="color:#2da44e;">✅</span>| 2026-01-29 | @pat | none |
 | 19 | implement uniform structure for variants array | variants array had a mix of strings and objects - moved to uniform object structure with price:null where applicable | <span style="color:#2da44e;">✅</span>| 2026-01-29 | @pat | none |
 | 20 | Product handling & Shopping for Admins and Guests with Variants | Design, page, DB updates for rendering variants on guest selection and admin pages. (handle objects in arrays by react) | <span style="color:#2da44e;">✅</span>| 2026-01-29 | @pat | none |
-
+| 21 | Shop Page | Design and implement a parallax on the shop page for improved guest navigation and control when scrolling through product options (and implemented for mobile)| <span style="color:#2da44e;">✅</span>| 2026-01-30 | @pat | none |
 
 
 
