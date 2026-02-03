@@ -287,6 +287,7 @@ Track guest amenity requests:
 - Blackout dates highlighted
 - Holiday markers
 - Drag-to-create reservation
+- Explore a separate booking engine implementation apart from MEWS
 
 ---
 
@@ -428,7 +429,94 @@ Maintaining dark/light themes with resort-appropriate colors:
 
 ---
 
-## Implementation Order
+## Phase 10: Migration of MEWS Data to Cypress Platform
+
+This migration system transforms guest and reservation data from Excel files extracted from MES into Supabase tables. It uses a 6-phase pipeline architecture with modular components for maintainability.
+
+### Key Features
+
+- **Smart Excel Parsing** - Auto-detects best sheet, maps column name variations
+- **Intelligent Grouping** - Identifies shared reservations (couples, families)
+- **Multi-Level Validation** - Errors block, warnings flag, ok passes
+- **Fuzzy Matching** - Links customer groups to reservations even with name variations
+- **Batch Inserts** - Handles large datasets with configurable batch sizes
+- **Detailed Reports** - Markdown reports with HTML tables for all issues
+
+---
+
+## Architecture
+
+```
+scripts/migrations/
+├── src/
+│   ├── index.ts              # Main orchestrator (entry point)
+│   ├── config.ts             # Configuration constants
+│   ├── types/
+│   │   └── index.ts          # All TypeScript interfaces
+│   ├── utils/
+│   │   ├── id-generator.ts   # Unique ID generation
+│   │   ├── date-utils.ts     # Date parsing and formatting
+│   │   ├── string-utils.ts   # String normalization
+│   │   └── index.ts          # Barrel export
+│   ├── io/
+│   │   ├── excel-reader.ts   # Generic Excel file reading
+│   │   └── index.ts          # Barrel export
+│   ├── domain/
+│   │   ├── villas.ts         # Villa master data
+│   │   ├── column-mappings.ts # Excel column mappings
+│   │   ├── grouping.ts       # Customer grouping logic
+│   │   ├── validation.ts     # Group validation
+│   │   ├── matching.ts       # Reservation matching
+│   │   └── index.ts          # Barrel export
+│   ├── db/
+│   │   ├── repository.ts     # Database operations
+│   │   └── index.ts          # Barrel export
+│   └── report/
+│       ├── markdown-generator.ts # Report generation
+│       └── index.ts          # Barrel export
+├── supabase-client.ts        # Supabase connection
+├── migrate-data.ts           # Legacy monolithic script (deprecated)
+└── README.md                 # This file
+```
+
+### Data Flow
+
+```
+Excel Files                     Memory Structures                  Database
+───────────                     ─────────────────                  ────────
+
+customerprofiles.xlsx  ──┐
+                         ├──► RawCustomerRecord[] ──► CustomerGroup[] ──► guest_profiles
+reservations.xlsx ───────┤                                │              reservations
+                         │                                │
+                         └──► RawReservationRecord[] ─────┘
+                                        │
+villas.ts (hardcoded) ──────► VillaMaster[] ──────────────────────────► villas
+```
+
+---
+
+## Quick Start for executing migrations
+
+```bash
+# 1. Install dependencies
+cd cypress-cms
+pnpm install
+
+# 2. Ensure Excel files are in place
+#    - data/customerprofiles.xlsx
+#    - data/reservations.xlsx
+
+# 3. Run dry-run to validate (no DB changes)
+pnpm migrate:dry
+
+# 4. Run full migration
+pnpm migrate
+```
+
+---
+
+## DEVELOPMENT PLAN IMPLEMENTATION ORDER 
 
 1. ✅ Types & mock data (foundation)
 2. ✅ Mock DB service layer
@@ -440,7 +528,8 @@ Maintaining dark/light themes with resort-appropriate colors:
 8. ✅ Amenities module
 9. ✅ Messaging system
 10. ✅ Calendar view
-11. ✅ Reports page
+12. ✅ Migration Scripts, Testing, Supabase Table generation
+13. ✅ Reports page (migration results and others)
 
 ---
 
