@@ -85,8 +85,9 @@
 - [x] Test Migrations - resolve data exceptions (ie - reservations with no guest profile match)
 - [x] Create database schema migrations - guests and reservations
 - [x] Create database schema migrations - villas
-- [ ] Replace mock-db for guests and reservations with Supabase client
-- [ ] Refactor components to use Supabase
+- [x] Replace mock-db for guests and reservations with Supabase client
+- [x] Refactor components to use Supabase
+- [x] Restructure components for improved maintenance and document
 - [ ] Add real-time subscriptions for live updates (to be investigated - MEWS has a scheduled download function)
 - [ ] Work with Tanner on actions to complete or collect missing table data (identified 3 reservations that appear to outliers - Holbrook, checkin July 1, Hampton, ckecin Sept 4, Herchecbach, checkin April 1 - all 3 guests appeare to have new reservations at alternate dates, whcih are the dates reflected in their guest records)
 - [ ] Confirm with Tanner mapping of Villas from MEWS to new CYPRESS Platform. Data Map currently reflects Moody Modernist => Laurel Villa; European Organic => Magnolia Villa; Contemporary Elegance => Cedar Villa;
@@ -112,14 +113,14 @@
 - [ ] Send account access codes to guests
 - [ ] Guest preferences and saved payment methods
 
+### Authentication
+- [x] OTP implemented with whitelist for additional admin security
+- [ ] Role-based access control?
+- [ ] Staff login/logout
+
 ---
 
 ## Technical Debt / Improvements
-
-### Authentication
-- [ ] Add authentication (Supabase Auth or similar)
-- [ ] Role-based access control
-- [ ] Staff login/logout
 
 ### Performance
 - [ ] Add React Query or SWR for data fetching
