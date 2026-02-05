@@ -111,11 +111,13 @@
 ### GENERAL QUESTIONS, ISSUES, SOFTWARE MAINTENANCE
 - [ ] Processing of new orders with Vice Kitchen 
 - confirmation email was not sent when tested
+- the STRIPE webhook references a tannerbliss1 projects (fix that reference)
 - How is an order canceled or modified once submitted?
 - [ ] Text integration via Twillio
 - [ ] For email transport, use cypressresort (remove strategicmachine) 
 - [ ] Processing of new orders with Vice Kitchen 
 - [ ] Execute set of actions on DRY 
+
 
 ### Guest Messaging (`/messages`)
 - [ ] Thread list with unread indicators
