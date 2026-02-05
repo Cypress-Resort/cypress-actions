@@ -43,6 +43,7 @@
 | 21 | Shop Page | Design and implement a parallax on the shop page for improved guest navigation and control when scrolling through product options (and implemented for mobile)| <span style="color:#2da44e;">✅</span>| 2026-01-30 | @pat | none |
 | 22 | Footer | Redesign footer so that it is more discrete, compact and not overpowering (and implemented for mobile). Eliminated some links redundant to the main menu| <span style="color:#2da44e;">✅</span>| 2026-01-30 | @pat | none |
 | 23 | Shopping Cart Button | Added visual cues so that shoppers able to see which products added to cart without needing to visit the Cart Page| <span style="color:#2da44e;">✅</span>| 2026-01-30 | @pat | none |
+| 24 | Test Menu Issue | Ordered items from the menu, paid Stripe with test card, BUT never received an email confirm | <span style="color:#cf222e;">❌ Not completed</span> | 2026-02-05 | @pat | none |
 
 
 

@@ -12,6 +12,10 @@
 - [x] Created mock database service with async CRUD operations
   - Simulates network delay, pagination, filtering
   - Location: `lib/db/mock-db.ts`
+- [x] With MEWS Migration, integrated SQL apis for live data 
+  - RLS fully implemented
+  - Data fully secured with whitelist auth and OTP
+  - Deployed LOGIN ATTEMPT tracking for additional security
 
 ### UI Components
 - [x] Refactored sidebar for resort navigation
@@ -89,9 +93,10 @@
 - [x] Refactor components to use Supabase
 - [x] Restructure components for improved maintenance and document
 - [ ] Add real-time subscriptions for live updates (to be investigated - MEWS has a scheduled download function)
-- [ ] Work with Tanner on actions to complete or collect missing table data (identified 3 reservations that appear to outliers - Holbrook, checkin July 1, Hampton, ckecin Sept 4, Herchecbach, checkin April 1 - all 3 guests appeare to have new reservations at alternate dates, whcih are the dates reflected in their guest records)
+- [ ] Work with Tanner on actions to complete or collect missing table data (identified 3 reservations that appear to outliers - Holbrook, checkin July 1, Hampton, ckecin Sept 4, Herchecbach, checkin April 1 - all 3 guests appear to have new reservations at alternate dates, whcih are the dates reflected in their guest records)
 - [ ] Confirm with Tanner mapping of Villas from MEWS to new CYPRESS Platform. Data Map currently reflects Moody Modernist => Laurel Villa; European Organic => Magnolia Villa; Contemporary Elegance => Cedar Villa;
 - [ ] Confirm with Tanner ERD for known entities;
+- [ ] Open Item: Working with Stripe test key and integration with and processing of new orders with Vice Kitchen
 
 ### Guest Messaging (`/messages`)
 - [ ] Thread list with unread indicators
