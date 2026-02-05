@@ -96,7 +96,26 @@
 - [ ] Work with Tanner on actions to complete or collect missing table data (identified 3 reservations that appear to outliers - Holbrook, checkin July 1, Hampton, ckecin Sept 4, Herchecbach, checkin April 1 - all 3 guests appear to have new reservations at alternate dates, whcih are the dates reflected in their guest records)
 - [ ] Confirm with Tanner mapping of Villas from MEWS to new CYPRESS Platform. Data Map currently reflects Moody Modernist => Laurel Villa; European Organic => Magnolia Villa; Contemporary Elegance => Cedar Villa;
 - [ ] Confirm with Tanner ERD for known entities;
-- [ ] Open Item: Working with Stripe test key and integration with and processing of new orders with Vice Kitchen
+
+### Guest Account Management (desktop and mobile responsive)
+- [ ] Guest self-service portal setup
+- [ ] Worldclass Guest Dashboard with single integrated view of
+-- Villa reservation details
+-- Menu order
+-- Amenities (spa, private chef, pet fees, airport transport, other)
+-- Experiences (golf, biking, boating, rafting, other )
+-- Lock code
+- [ ] Send account access codes to guests as part of MEWS mirgation (Day One setup)
+- [ ] Guest preferences and saved payment methods
+
+### GENERAL QUESTIONS, ISSUES, SOFTWARE MAINTENANCE
+- [ ] Processing of new orders with Vice Kitchen 
+- confirmation email was not sent when tested
+- How is an order canceled or modified once submitted?
+- [ ] Text integration via Twillio
+- [ ] For email transport, use cypressresort (remove strategicmachine) 
+- [ ] Processing of new orders with Vice Kitchen 
+- [ ] Execute set of actions on DRY 
 
 ### Guest Messaging (`/messages`)
 - [ ] Thread list with unread indicators
@@ -112,11 +131,6 @@
 - [ ] Integration settings (PMS, payment processors)
 - [ ] Email/SMS configuration
 
-### Guest Account Management
-- [ ] Guest self-service portal setup
-- [ ] Account creation from spreadsheet import
-- [ ] Send account access codes to guests
-- [ ] Guest preferences and saved payment methods
 
 ### Authentication
 - [x] OTP implemented with whitelist for additional admin security
