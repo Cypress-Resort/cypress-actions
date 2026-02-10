@@ -117,6 +117,7 @@
 - [x] For email transport, use cypressresort (remove strategicmachine) 
 - [ ] Processing of new orders with Vice Kitchen 
 - [ ] Execute set of actions on DRY for CMS platform
+- [X] Set up new default constant of $629 per night for stays
 - [ ] Investigate and resolve reservation data that is showing up a day earlier than actual. Example cases include:
 -- Julie Masterson
 -- Josh Allen
