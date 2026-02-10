@@ -25,7 +25,7 @@
 | 3 | Journey Menu Link | Update the navbar to link from the Journey Tab to the posts with a chronology of the Resort build. Need access to content  | <span style="color:#cf222e;">❌ Not completed</span> | 2026-01-24 | @pat| none |
 | 4 | Pardon our Progress Page | Resolved with a label that is dsiplayed on mouseover of menu item | <span style="color:#2da44e;">✅</span> | 2026-01-20 | @pat | none |
 | 5 | Admin login | test the strength of admin login - Refactor where needed | <span style="color:#cf222e;">❌ Not completed</span> | 2026-01-21 | @pat | none |
-| 6 | Menu Testing | test the  process for shopping for menu items - and payments through stripe | <span style="color:#cf222e;">❌ Not completed</span> | 2026-01-22 | @tanner | none |
+| 6 | Menu Testing | test the  process for shopping for menu items - and payments through stripe | <span style="color:#2da44e;">✅</span> | 2026-01-22 | @tanner | none |
 | 7 | Menu Page Image Viewer | Refactor the page to permit multiple images (up to 5) to be viewed in the carousel for any single item - also evaluate the image management functions to ensure simple integrations (Vercel blob storage)  | <span style="color:#2da44e;">✅</span> | 2026-01-23 | @pat | none |
 | 8 | CI/CD Workflow | Evaluate current process for managing and testing PRs (and merges). Refactor where needed  | <span style="color:#cf222e;">❌ Not completed</span> | 2026-01-24 | @pat | none |
 | 9 | Activate or Disable NavBar Items | Build admin page to enable or disable navbar items - provide administrator with control over page visibility  | <span style="color:#2da44e;">✅</span> | 2026-01-21 | @pat | none |
@@ -43,8 +43,8 @@
 | 21 | Shop Page | Design and implement a parallax on the shop page for improved guest navigation and control when scrolling through product options (and implemented for mobile)| <span style="color:#2da44e;">✅</span>| 2026-01-30 | @pat | none |
 | 22 | Footer | Redesign footer so that it is more discrete, compact and not overpowering (and implemented for mobile). Eliminated some links redundant to the main menu| <span style="color:#2da44e;">✅</span>| 2026-01-30 | @pat | none |
 | 23 | Shopping Cart Button | Added visual cues so that shoppers able to see which products added to cart without needing to visit the Cart Page| <span style="color:#2da44e;">✅</span>| 2026-01-30 | @pat | none |
-| 24 | Test Menu Issue | Ordered items from the menu, paid Stripe with test card, BUT never received an email confirm | <span style="color:#cf222e;">❌ Not completed</span> | 2026-02-05 | @pat | none |
-| 25 | Data Issue | Gaza Olive Oil - Drizzle is priced at $540 | <span style="color:#cf222e;">❌ Not completed</span> | 2026-02-07 | @tanner | none |
+| 24 | Test Menu Issue | Ordered items from the menu, paid Stripe with test card, BUT never received an email confirm | <span style="color:#2da44e;">✅</span>| 2026-02-05 | @pat | none |
+| 25 | Data Issue | Gaza Olive Oil - Drizzle is priced at $540 | <span style="color:#2da44e;">✅</span> | 2026-02-07 | @tanner | none |
 
 
 

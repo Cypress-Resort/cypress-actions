@@ -108,15 +108,19 @@
 - [ ] Send account access codes to guests as part of MEWS mirgation (Day One setup)
 - [ ] Guest preferences and saved payment methods
 
-### GENERAL QUESTIONS, ISSUES, SOFTWARE MAINTENANCE
-- [ ] Processing of new orders with Vice Kitchen 
+### GENERAL QUESTIONS, BUGS, DATA ISSUES, SOFTWARE MAINTENANCE
+- [x] Processing of new orders with Vice Kitchen 
 - confirmation email was not sent when tested
 - the STRIPE webhook references a tannerbliss1 projects (fix that reference)
 - How is an order canceled or modified once submitted?
 - [ ] Text integration via Twillio
-- [ ] For email transport, use cypressresort (remove strategicmachine) 
+- [x] For email transport, use cypressresort (remove strategicmachine) 
 - [ ] Processing of new orders with Vice Kitchen 
-- [ ] Execute set of actions on DRY 
+- [ ] Execute set of actions on DRY for CMS platform
+- [ ] Investigate and resolve reservation data that is showing up a day earlier than actual. Example cases include:
+-- Julie Masterson
+-- Josh Allen
+-- every reservation examined is showing up a day earlier
 
 
 ### Guest Messaging (`/messages`)
