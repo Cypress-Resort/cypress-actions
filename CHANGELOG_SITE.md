@@ -45,6 +45,7 @@
 | 23 | Shopping Cart Button | Added visual cues so that shoppers able to see which products added to cart without needing to visit the Cart Page| <span style="color:#2da44e;">✅</span>| 2026-01-30 | @pat | none |
 | 24 | Test Menu Issue | Ordered items from the menu, paid Stripe with test card, BUT never received an email confirm | <span style="color:#2da44e;">✅</span>| 2026-02-05 | @pat | none |
 | 25 | Data Issue | Gaza Olive Oil - Drizzle is priced at $540 | <span style="color:#2da44e;">✅</span> | 2026-02-07 | @tanner | none |
+| 26 | Content Management | Provide content for Villas, Amenities and Experiences (new tab on the admin site) | <span style="color:#cf222e;">❌ Not completed</span> | 2026-02-011 | @tanner | none |
 
 
 
