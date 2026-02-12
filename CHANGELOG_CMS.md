@@ -27,7 +27,7 @@
 - [x] Updated charts with resort data (Revenue & Occupancy, Booking Channels)
 - [x] Created activity table for today's check-ins/check-outs
 
-### Pages
+### ADMIN DASHBOARD
 - [x] Dashboard overview page (`/`)
   - Welcome section, stats cards, charts, today's activity table
   - Quick actions sidebar with today's check-ins, check-outs, and pending tasks
@@ -81,6 +81,28 @@
 
 ---
 
+### GUEST PORTAL (mobile responsive)
+- [x] Guest registration - (select login) overview page (`/`)
+  - Diverted to guest profile registration after OTP verification
+  - Collect minimum setup information then divert to portal
+- [x] Portal page (`/guest/dashboard`)
+  - Full view of all key functions for making and changing reservations
+  - Full access to functions to shape the guest experience: 
+    - Reservations 
+    - Grocery Menu
+    - Amenities
+    - Experiences 
+    - Concierge  
+- [x] Electronic lock code 
+  - View active code  
+- [x] Villas inventory page (`/villas`)
+  - Grid/list view toggle
+  - Filter by status and type
+  - Villa cards with details  
+
+
+---
+
 ## Work in Progress
 
 ### Database Migration from MEWS
@@ -97,16 +119,7 @@
 - [x] Confirm with Tanner mapping of Villas from MEWS to new CYPRESS Platform. Data Map currently reflects Moody Modernist => Laurel Villa; European Organic => Magnolia Villa; Contemporary Elegance => Cedar Villa;
 - [ ] Confirm with Tanner ERD for known entities;
 
-### Guest Account Management (desktop and mobile responsive)
-- [ ] Guest self-service portal setup
-- [ ] Worldclass Guest Dashboard with single integrated view of
--- Villa reservation details
--- Menu order
--- Amenities (spa, private chef, pet fees, airport transport, other)
--- Experiences (golf, biking, boating, rafting, other )
--- Lock code
-- [ ] Send account access codes to guests as part of MEWS mirgation (Day One setup)
-- [ ] Guest preferences and saved payment methods
+
 
 ### GENERAL QUESTIONS, BUGS, DATA ISSUES, SOFTWARE MAINTENANCE
 - [x] Processing of new orders with Vice Kitchen 
