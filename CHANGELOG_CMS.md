@@ -26,6 +26,7 @@
 - [x] Updated stats cards for resort metrics
 - [x] Updated charts with resort data (Revenue & Occupancy, Booking Channels)
 - [x] Created activity table for today's check-ins/check-outs
+- [x] Refactored cms app for DRY. New components created under /common, making an array of utilities available across the app
 
 ### ADMIN DASHBOARD
 - [x] Dashboard overview page (`/`)
@@ -78,6 +79,8 @@
     - Unit status overview (collapsible)
     - Share functionality (copy to clipboard, native share, print)
     - Strikethrough on completed items
+
+    
 
 ---
 
