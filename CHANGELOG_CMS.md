@@ -27,6 +27,7 @@
 - [x] Updated charts with resort data (Revenue & Occupancy, Booking Channels)
 - [x] Created activity table for today's check-ins/check-outs
 - [x] Refactored cms app for DRY. New components created under /common, making an array of utilities available across the app
+- [x] Refactor toggle switch and theme provider, including dark, light and system
 
 ### ADMIN DASHBOARD
 - [x] Dashboard overview page (`/`)
@@ -80,8 +81,6 @@
     - Share functionality (copy to clipboard, native share, print)
     - Strikethrough on completed items
 
-    
-
 ---
 
 ### GUEST PORTAL (mobile responsive)
@@ -102,6 +101,11 @@
   - Grid/list view toggle
   - Filter by status and type
   - Villa cards with details  
+- [x] Availability (`/availability`)
+  - Calendar driven search for availability across all Villas
+  - Calendar color marks indicating dates where all villas sold out
+  - Calendar search - next available date for a Villa
+  - Added more elegant, guest friendly error messages when attempting to book sold out date 
 
 
 ---

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc:*)",
+      "Bash(npx react-day-picker:*)",
+      "Bash(npx next build)",
+      "Bash(find:*)"
+    ]
+  }
+}
