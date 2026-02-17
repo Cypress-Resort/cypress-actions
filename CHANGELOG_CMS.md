@@ -125,11 +125,12 @@
 - [ ] Work with Tanner - provide missing table data (identified 3 reservations that appear to outliers -- Holbrook, checkin July 1, Hampton, checkin Sept 4, Herchecbach, checkin April 1 - all 3 guests appear to have new reservations at alternate dates, whcih are the dates reflected in their guest records)
 - [x] Confirm with Tanner mapping of Villas from MEWS to new CYPRESS Platform. Data Map currently reflects Moody Modernist => Laurel Villa; European Organic => Magnolia Villa; Contemporary Elegance => Cedar Villa;
 - [ ] Confirm with Tanner ERD for known entities;
-- [ ] Content for the following entities:
+- [ ] Content and maintenance functions for the following entities:
 -- villas (including images)
 -- amenities (+ workflow logic)
 -- experiences (+ workflow logic)
 -- tenant configurations + maintenance dashboard for other resorts using platform
+-- calendar configurations + rules
 
 ### GENERAL QUESTIONS, BUGS, DATA ISSUES, SOFTWARE MAINTENANCE
 - [x] Processing of new orders with Vice Kitchen 
