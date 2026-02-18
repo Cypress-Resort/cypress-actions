@@ -4,7 +4,9 @@
       "Bash(npx tsc:*)",
       "Bash(npx react-day-picker:*)",
       "Bash(npx next build)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(pnpm add:*)",
+      "Bash(node -e:*)"
     ]
   }
 }

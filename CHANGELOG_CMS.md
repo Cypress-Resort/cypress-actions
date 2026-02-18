@@ -8,7 +8,7 @@
   - Location: `types/`
 - [x] Built mock data layer with realistic resort data
   - 5 Villas, 10 Guests, 10 Reservations, 12 Amenities, Message threads
-  - Location: `mock-data/`
+  - Location: `mock-data/` (depracated by real data)
 - [x] Created mock database service with async CRUD operations
   - Simulates network delay, pagination, filtering
   - Location: `lib/db/mock-db.ts`
@@ -106,6 +106,14 @@
   - Calendar color marks indicating dates where all villas sold out
   - Calendar search - next available date for a Villa
   - Added more elegant, guest friendly error messages when attempting to book sold out date 
+  - Full reservation lifecycle: select villas, select dates, confirm availability, make payment (Stripe), view reservation details, cancel reservation (confirm refund if within cancellation window)
+- [x] Profile (`/profile`)
+  - guest directed edit profile fields, including preferences and notes
+  - making email and mobile phone mandatory
+  - notations that payments handled through stripe
+- [] Guest Selections: Amenities, Experiences, Menu (`/selections`)
+  - with a confirmed and paid reservation, access other options for the stay
+  - view lock code on day of checkin
 
 
 ---
@@ -121,16 +129,15 @@
 - [x] Replace mock-db for guests and reservations with Supabase client
 - [x] Refactor components to use Supabase
 - [x] Restructure components for improved maintenance and document
-- [ ] Add real-time subscriptions for live updates (to be investigated - MEWS has a scheduled download function)
 - [ ] Work with Tanner - provide missing table data (identified 3 reservations that appear to outliers -- Holbrook, checkin July 1, Hampton, checkin Sept 4, Herchecbach, checkin April 1 - all 3 guests appear to have new reservations at alternate dates, whcih are the dates reflected in their guest records)
 - [x] Confirm with Tanner mapping of Villas from MEWS to new CYPRESS Platform. Data Map currently reflects Moody Modernist => Laurel Villa; European Organic => Magnolia Villa; Contemporary Elegance => Cedar Villa;
-- [ ] Confirm with Tanner ERD for known entities;
-- [ ] Content and maintenance functions for the following entities:
+- [] Confirm with Tanner ERD for known entities;
+- [] Content and maintenance functions for the following entities:
 -- villas (including images)
 -- amenities (+ workflow logic)
 -- experiences (+ workflow logic)
--- tenant configurations + maintenance dashboard for other resorts using platform
 -- calendar configurations + rules
+-- tenant configurations + maintenance dashboard for other resorts using platform
 
 ### GENERAL QUESTIONS, BUGS, DATA ISSUES, SOFTWARE MAINTENANCE
 - [x] Processing of new orders with Vice Kitchen 
@@ -147,13 +154,16 @@
 -- Josh Allen
 -- every reservation examined is showing up a day earlier
 
-
 ### Guest Messaging (`/messages`)
 - [ ] Thread list with unread indicators
 - [ ] Message composer with templates
 - [ ] Multi-channel support (email, SMS, in-app chat)
 - [ ] Thread detail view
 - [ ] Automated message triggers (pre-arrival, post-checkout)
+
+### Vendor Dashboard (`/vendors`)
+- [] whitelisted vendor access to maintain offers (contracts)
+- [] vendor access to orders (contracts)
 
 ### Settings (`/settings`)
 - [ ] Resort profile settings
